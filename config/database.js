@@ -6,9 +6,9 @@ module.exports = ({ env }) => {
             connection: {
                 client: 'postgres',
                 connection: {
-                    socketPath: `/cloudsql/${env('INSTANCE_CONNECTION_NAME')}`,
+                    host: `/cloudsql/${env('INSTANCE_CONNECTION_NAME')}`,
                     database: env('DATABASE_NAME'),
-                    username: env('DATABASE_USERNAME'),
+                    user: env('DATABASE_USERNAME'),
                     password: env('DATABASE_PASSWORD'),
                 }
             },
