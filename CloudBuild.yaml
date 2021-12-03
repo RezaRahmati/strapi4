@@ -5,6 +5,6 @@ steps:
   - "--tag=gcr.io/strapi-22/strapi4:latest"
   - "--file=Dockerfile"
   - .  
-  timeout: 1800s
 images:
 - "gcr.io/strapi-22/strapi4"
+timeout: 3600s
